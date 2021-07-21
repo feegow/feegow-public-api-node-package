@@ -1,0 +1,30 @@
+{
+  "name": "@feegow/publicapi",
+  "version": "1.0.0",
+  "description": "Node package to use Feegow's Public API.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/feegow/feegow-public-api-node-package.git"
+  },
+  "keywords": [
+    "Feegow",
+    "API"
+  ],
+  "author": "Gustavo Contreiras",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/feegow/feegow-public-api-node-package/issues"
+  },
+  "homepage": "https://github.com/feegow/feegow-public-api-node-package#readme",
+  "devDependencies": {
+    "jest": "^27.0.6"
+  },
+  "dependencies": {
+    "atob": "^2.1.2",
+    "axios": "^0.21.1"
+  }
+}
