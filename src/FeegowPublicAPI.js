@@ -33,7 +33,7 @@ class FeegowPublicAPI {
                 method: 'get',
                 url: 'https://api.feegow.com/v1/api/patient/list',
                 headers: {
-                    'X-Access-Token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJmZWVnb3ciLCJhdWQiOiJwdWJsaWNhcGkiLCJpYXQiOjE2MjUwNjk5MTAsImxpY2Vuc2VJRCI6IjU0NTkiLCJzdWNjZXNzIjp0cnVlLCJ1c2VySWQiOiIzMDAwMjgiLCJsaWNlbnNlSWQiOiI1NDU5IiwiaXNIb21vbG9nIjp0cnVlLCJkYXRldGltZSI6IjIwMjEtMDYtMzAiLCJ2YWxpZF91bnRpbCI6IjIwMjEtMDctMDEifQ.PWj6gc78t1WzidUyp0lTOIizQhty5M9KkKwGvjMWn6w',
+                    'X-Access-Token': this.token,
                     'Content-Type': 'application/json'
                 },
                 data: data
