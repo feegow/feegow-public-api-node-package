@@ -1,6 +1,6 @@
 {
   "name": "@feegow/publicapi",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Node package to use Feegow's Public API.",
   "main": "index.js",
   "scripts": {
@@ -21,7 +21,8 @@
   },
   "homepage": "https://github.com/feegow/feegow-public-api-node-package#readme",
   "devDependencies": {
-    "jest": "^27.0.6"
+    "jest": "^27.0.6",
+    "dotenv": "^10.0.0"
   },
   "dependencies": {
     "atob": "^2.1.2",
