@@ -2,9 +2,6 @@
 if (typeof exports != "undefined") {  
     var { atob } = require('atob');
     var axios = require('axios');
-} else {
-    import { atob } from 'atob';
-    import axios from 'axios';
 }
 
 class FeegowPublicAPI {
