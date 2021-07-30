@@ -30,4 +30,3 @@ feegowApi.getPatients('v1', {
     "telefone": "(21) 2018-0123",
     "cpf": "177.820.767-73"
 });
-``` 

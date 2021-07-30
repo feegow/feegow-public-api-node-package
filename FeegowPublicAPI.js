@@ -43,7 +43,7 @@ class FeegowPublicAPI {
             headers.append("X-Access-Token", this.token);
             headers.append("Content-Type", "application/json");
     
-            fetch(` https://api.feegow.com/${version}/api/patient/list?${filter}`, { 
+            fetch(` https://api.feegow.com/v1/api/${version}patient/list?${filter}`, { 
                 method: 'GET',
                 headers: headers
             })
@@ -70,13 +70,13 @@ class FeegowPublicAPI {
         switch(version) {
             case 'v1':
             case 'V1':
-                return 'v1';
+                return '';
             case 'v2':
             case 'V2':
-                return 'v2';
+                return 'v2/';
             case 'v3':
             case 'V3':
-                return 'v3';
+                return 'v3/';
             default:
                 throw 'Unknown API version.';
         }

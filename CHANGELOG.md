@@ -2,7 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
-## [1.0.14](https://github.com/feegow/feegow-public-api-node-package/compare/v1.0.12...v1.0.13) (2021-07-30)
+## [1.0.15](https://github.com/feegow/feegow-public-api-node-package/compare/v1.0.14...v1.0.15) (2021-07-30)
+
+- Fix setting wrong path on endpoint
+
+## [1.0.14](https://github.com/feegow/feegow-public-api-node-package/compare/v1.0.13...v1.0.14) (2021-07-30)
 
 - Organização das branchs do repositório
 
