@@ -31,13 +31,7 @@ class FeegowPublicAPI {
      *    "cpf": "177.820.767-73"
      * };
      * */
-    getPatients(version = 'v1', data = {
-        offset: null,
-        limit: null,
-        telefone: null,
-        cpf: null,
-        view_mode: null
-    }) {
+    getPatients(version = 'v1', data = {}) {
 
         version = this.checkAndFormatVersion(version);
         
