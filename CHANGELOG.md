@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.9](https://github.com/feegow/feegow-public-api-node-package/compare/v1.0.8...v1.0.9) (2021-07-30)
+
+- Add NPM script push-publish
+
 ## [1.0.8](https://github.com/feegow/feegow-public-api-node-package/compare/v1.0.7...v1.0.8) (2021-07-30)
 
 - Fix CORS
