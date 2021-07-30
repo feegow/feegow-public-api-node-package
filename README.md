@@ -44,7 +44,7 @@ feegowApi.getPatients('v1', {
 > npm publish
 > git add .
 > git commit -m \"Update %npm_package_version%\"
-> git tag -a %npm_package_version%
+> git tag %npm_package_version%
 > git push origin
 > git push origin %npm_package_version%
 > start https://github.com/feegow/feegow-public-api-node-package/releases/new?tag=%npm_package_version%
