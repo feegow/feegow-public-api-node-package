@@ -13,7 +13,7 @@ All notable changes to this project will be documented in this file.
 ### Added
 
 - Dotenv support in test file.
-- Import by `<script src="https://unpkg.com/@feegow/publicapi@1.0.1/src/FeegowPublicAPI.js"></script>`
+- Import by `<script src="https://unpkg.com/@feegow/publicapi@1.0.1/FeegowPublicAPI.js"></script>`
 
 ## [1.0.0](https://github.com/feegow/feegow-public-api-node-package/tree/1.0.0) (2021-07-22)
 
