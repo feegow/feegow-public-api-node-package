@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.14](https://github.com/feegow/feegow-public-api-node-package/compare/v1.0.12...v1.0.13) (2021-07-30)
+
+- Organização das branchs do repositório
+
 ## [1.0.13](https://github.com/feegow/feegow-public-api-node-package/compare/v1.0.12...v1.0.13) (2021-07-30)
 
 - Fix `FeegowPublicAPI.js:52 GET https://api.feegow.com/v1/api/patient/list?offset=null&limit=null&telefone=null&cpf=null&view_mode=null 422`
