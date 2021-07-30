@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.5](https://github.com/feegow/feegow-public-api-node-package/compare/v1.0.5...v1.0.6) (2021-07-30)
+
+- Replacement of axios for node-fetch
+- Add documentation with example
+
 ## [1.0.5](https://github.com/feegow/feegow-public-api-node-package/compare/v1.0.4...v1.0.5) (2021-07-30)
 
 - Error: Cannot find module 'C:\Dev\feegow-public-api-node-package\testeee\node_modules\@feegow\publicapi\index.js'. Please verify that the package.json has a valid "main" entry
