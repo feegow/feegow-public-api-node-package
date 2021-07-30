@@ -1,6 +1,6 @@
 {
   "name": "@feegow/publicapi",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Node package to use Feegow's Public API.",
   "main": "FeegowPublicAPI.js",
   "scripts": {
