@@ -59,7 +59,7 @@ class FeegowPublicAPI {
                     'Access-Control-Allow-Origin': '*',
                     'Access-Control-Allow-Credentials': 'true',
                     'Access-Control-Allow-Methods': 'GET,HEAD,OPTIONS,POST,PUT',
-                    'Access-Control-Allow-Headers': 'Access-Control-Allow-Headers, Origin, Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers',
+                    'Access-Control-Allow-Headers': 'x-access-token, access-control-allow-headers, origin, accept, x-requested-with, content-type, access-control-request-method, access-control-request-headers',
                     'X-Access-Token': this.token,
                     'Content-Type': 'application/json'
                 }
