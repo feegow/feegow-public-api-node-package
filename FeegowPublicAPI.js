@@ -46,8 +46,8 @@ class FeegowPublicAPI {
             const filter = new URLSearchParams(data).toString();
 
             const headers = new Headers();
-            myHeaders.append("X-Access-Token", this.token);
-            myHeaders.append("Content-Type", "application/json");
+            headers.append("X-Access-Token", this.token);
+            headers.append("Content-Type", "application/json");
     
             fetch(` https://api.feegow.com/${version}/api/patient/list?${filter}`, { 
                 method: 'GET',

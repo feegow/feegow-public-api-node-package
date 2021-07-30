@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.12](https://github.com/feegow/feegow-public-api-node-package/compare/v1.0.11...v1.0.12) (2021-07-30)
+
+- Fix `ReferenceError: myHeaders is not defined`
+
 ## [1.0.11](https://github.com/feegow/feegow-public-api-node-package/compare/v1.0.10...v1.0.11) (2021-07-30)
 
 - Fix CORS
