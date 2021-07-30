@@ -1,14 +1,15 @@
 
 if (typeof exports != "undefined") {  
     var { atob } = require('atob');
-    var axios = require('axios');
+    var fetch = require('node-fetch');
 }
 
 class FeegowPublicAPI {
 
     constructor(token) {
 
-        this.getPatients = this.getPatients.bind(this)
+        this.getPatients = this.getPatients.bind(this);
+        this.checkAndFormatVersion = this.checkAndFormatVersion.bind(this);
 
         const tokenInfo = this.decryptJwt(token);
 
@@ -20,30 +21,47 @@ class FeegowPublicAPI {
         this.tokenInfo = tokenInfo;
     }
 
-    getPatients() {
+    /**
+     * @example 
+     * const data = {
+     *    "view_mode": "full", // not working
+     *    "limit": 1, // not working
+     *    "offset": 0,
+     *    "telefone": "(21) 2018-0123",
+     *    "cpf": "177.820.767-73"
+     * };
+     * */
+    getPatients(version = 'v1', data = {
+        offset: null,
+        limit: null,
+        telefone: null,
+        cpf: null,
+        view_mode: null
+    }) {
+
+        version = this.checkAndFormatVersion(version);
         
         return new Promise((resolve, reject) => {
 
-            const data = JSON.stringify({
-                "view_mode": "full",
-                "limit": 1,
+            const data = {
+                "view_mode": "full", // not working
+                "limit": 1, // not working
                 "offset": 0,
                 "telefone": "(21) 2018-0123",
                 "cpf": "177.820.767-73"
-            });
+            };
+
+            const filter = new URLSearchParams(data).toString();
     
-            const config = {
-                method: 'get',
-                url: 'https://api.feegow.com/v1/api/patient/list',
+            fetch(` https://api.feegow.com/${version}/api/patient/list?${filter}`, { 
+                method: 'GET',
                 headers: {
                     'X-Access-Token': this.token,
                     'Content-Type': 'application/json'
-                },
-                data: data
-            };
-    
-            axios(config)
-                .then((response) => resolve(response['data']))
+                }
+            })
+                .then(res => res.json())
+                .then(json => resolve(json))
                 .catch((error) => reject(error['response'] ? error['response']['data'] : error));
         });
     }
@@ -58,6 +76,22 @@ class FeegowPublicAPI {
             return JSON.parse(jsonPayload);
         } catch (err) {
             return false;
+        }
+    }
+
+    checkAndFormatVersion(version) {
+        switch(version) {
+            case 'v1':
+            case 'V1':
+                return 'v1';
+            case 'v2':
+            case 'V2':
+                return 'v2';
+            case 'v3':
+            case 'V3':
+                return 'v3';
+            default:
+                throw 'Unknown API version.';
         }
     }
 }
