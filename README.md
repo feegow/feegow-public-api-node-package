@@ -36,10 +36,10 @@ feegowApi.getPatients('v1', {
 
 - Documente as alterações da versão no `CHANGELOG.md`
 - Incremente a versão no `package.json`
-- Execute `npm run publish-push`
+- Execute `npm run pub-push`
 - Adicione a versão no campo `Release title` da página que abrir
 
-> Ao executar `npm run publish-push` são executados os comandos abaixo:
+> Ao executar `npm run pub-push` são executados os comandos abaixo:
 > ```
 > npm publish
 > git add .
