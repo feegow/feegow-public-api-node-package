@@ -1,6 +1,6 @@
 require('dotenv').config();
 
-const FeegowPublicAPI = require('./FeegowPublicAPI');
+const FeegowPublicAPI = require('../FeegowPublicAPI');
 
 var feegowApi;
 

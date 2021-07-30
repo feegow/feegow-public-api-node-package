@@ -2,7 +2,7 @@
   "name": "@feegow/publicapi",
   "version": "1.0.4",
   "description": "Node package to use Feegow's Public API.",
-  "main": "index.js",
+  "main": "FeegowPublicAPI.js",
   "scripts": {
     "test": "jest"
   },
