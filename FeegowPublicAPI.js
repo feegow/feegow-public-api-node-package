@@ -43,23 +43,11 @@ class FeegowPublicAPI {
         
         return new Promise((resolve, reject) => {
 
-            const data = {
-                "view_mode": "full", // not working
-                "limit": 1, // not working
-                "offset": 0,
-                "telefone": "(21) 2018-0123",
-                "cpf": "177.820.767-73"
-            };
-
             const filter = new URLSearchParams(data).toString();
     
             fetch(` https://api.feegow.com/${version}/api/patient/list?${filter}`, { 
                 method: 'GET',
                 headers: {
-                    'Access-Control-Allow-Origin': '*',
-                    'Access-Control-Allow-Credentials': 'true',
-                    'Access-Control-Allow-Methods': 'GET,HEAD,OPTIONS,POST,PUT',
-                    'Access-Control-Allow-Headers': 'x-access-token, access-control-allow-headers, origin, accept, x-requested-with, content-type, access-control-request-method, access-control-request-headers',
                     'X-Access-Token': this.token,
                     'Content-Type': 'application/json'
                 }
