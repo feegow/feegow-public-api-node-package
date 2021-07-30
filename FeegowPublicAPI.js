@@ -44,13 +44,14 @@ class FeegowPublicAPI {
         return new Promise((resolve, reject) => {
 
             const filter = new URLSearchParams(data).toString();
+
+            const headers = new Headers();
+            myHeaders.append("X-Access-Token", this.token);
+            myHeaders.append("Content-Type", "application/json");
     
             fetch(` https://api.feegow.com/${version}/api/patient/list?${filter}`, { 
                 method: 'GET',
-                headers: {
-                    'X-Access-Token': this.token,
-                    'Content-Type': 'application/json'
-                }
+                headers: headers
             })
                 .then(res => res.json())
                 .then(json => resolve(json))
