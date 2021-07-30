@@ -39,7 +39,7 @@ feegowApi.getPatients('v1', {
 - Execute `npm run publish-push`
 - Adicione a versão no campo `Release title` da página que abrir
 
-> Ao executar `npm run push-publish` são executados os comandos abaixo:
+> Ao executar `npm run publish-push` são executados os comandos abaixo:
 > ```
 > npm publish
 > git add .
