@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.2](https://github.com/feegow/feegow-public-api-node-package/compare/v1.0.2...v1.0.3) (2021-07-30)
+
+## Fix
+
+- FeegowPublicAPI.js:1 Uncaught ReferenceError: require is not defined
+
 ## [1.0.2](https://github.com/feegow/feegow-public-api-node-package/compare/v1.0.1...v1.0.2) (2021-07-30)
 
 ## Fix

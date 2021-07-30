@@ -1,5 +1,11 @@
-const { atob } = require('atob');
-const axios = require('axios');
+
+if (typeof exports != "undefined") {  
+    var { atob } = require('atob');
+    var axios = require('axios');
+} else {
+    import { atob } from 'atob';
+    import axios from 'axios';
+}
 
 class FeegowPublicAPI {
 
@@ -59,6 +65,6 @@ class FeegowPublicAPI {
     }
 }
 
-if (typeof exports != "undefined"){    
+if (typeof exports != "undefined") {    
     module.exports = FeegowPublicAPI;
 }
