@@ -2,12 +2,18 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.2](https://github.com/feegow/feegow-public-api-node-package/compare/v1.0.1...v1.0.2) (2021-07-30)
+
+## Fix
+
+- Uncaught SyntaxError: Identifier 'FeegowPublicAPI' has already been declared
+
 ## [1.0.1](https://github.com/feegow/feegow-public-api-node-package/compare/v1.0.0...v1.0.1) (2021-07-30)
 
 ### Added
 
 - Dotenv support in test file.
-- Import by `<script src="https://unpkg.com/@feegow/publicapi@1.0.1/FeegowPublicAPI.js"></script>`
+- Import by `<script src="https://unpkg.com/@feegow/publicapi@1.0.1/src/FeegowPublicAPI.js"></script>`
 
 ## [1.0.0](https://github.com/feegow/feegow-public-api-node-package/tree/1.0.0) (2021-07-22)
 
