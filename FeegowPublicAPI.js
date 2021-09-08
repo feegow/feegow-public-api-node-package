@@ -6,6 +6,7 @@ if (typeof exports != "undefined") {
 class FeegowPublicAPI {
   constructor(token) {
     this.getPatients = this.getPatients.bind(this);
+    this.getAvailableSchedule = this.getAvailableSchedule.bind(this);
     this.checkAndFormatVersion = this.checkAndFormatVersion.bind(this);
 
     const tokenInfo = this.decryptJwt(token);
