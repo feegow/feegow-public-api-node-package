@@ -1,12 +1,12 @@
 {
     "name": "@feegow/publicapi",
-    "version": "1.0.15",
+    "version": "1.0.16",
     "description": "Node package to use Feegow's Public API.",
     "main": "FeegowPublicAPI.js",
     "scripts": {
         "test": "jest",
         "push": "git add . && git commit -m \"Update %npm_package_version%\" && git tag %npm_package_version% && git push origin && git push origin %npm_package_version% && start https://github.com/feegow/feegow-public-api-node-package/releases/new?tag=%npm_package_version%",
-        "pub-push": "npm publish && npm run push"
+        "pub-push": "npm publish && yarn push"
     },
     "repository": {
         "type": "git",
