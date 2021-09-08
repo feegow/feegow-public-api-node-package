@@ -63,24 +63,19 @@ class FeegowPublicAPI {
 
     return new Promise((resolve, reject) => {
       const filter = new URLSearchParams(data).toString();
-
-      const headers = new Headers();
-      headers.append("X-Access-Token", this.token);
-      headers.append("Content-Type", "application/json");
-
-      fetch(
-        ` https://api.feegow.com/v1/api/${version}appoints/available-schedule?${filter}`,
-        {
-          method: "GET",
-          headers: headers,
-        }
-      )
-        .then((res) => res.json())
-        .then((json) => resolve(json))
-        .catch((error) =>
-          reject(error["response"] ? error["response"]["data"] : error)
-        );
-    });
+            const headers = new Headers();
+            headers.append("X-Access-Token", this.token);
+            headers.append("Content-Type", "application/json");
+    
+            fetch(` https://api.feegow.com/v1/api/${version}patient/list?${filter}`, { 
+                method: 'GET',
+                headers: headers
+            })
+                .then(res => res.json())
+                .then(json => resolve(json))
+                .catch((error) => reject(error['response'] ? error['response']['data'] : error));
+        });
+    }
   }
 
   decryptJwt(token) {
