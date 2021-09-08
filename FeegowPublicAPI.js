@@ -116,5 +116,6 @@ class FeegowPublicAPI {
 }
 
 if (typeof exports != "undefined") {
+  exports.default = FeegowPublicAPI;
   module.exports = FeegowPublicAPI;
 }
